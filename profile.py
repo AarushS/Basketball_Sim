@@ -1,6 +1,6 @@
 import random
 firstNames = ("Thomas", "Daniel", "James", "Aaron", "Tommy", "Terrell", "Jack", "Joseph", "Samuel", "Quinn", "Hunter", "Vince", "Young", "Ian", "Erving", "Leo")
-lastNames = ("Smith", "Johnson", "Williams", "Kline","Brown", "Garcia", "Jones", "Miller", "Davis")
+lastNames = ("Smith", "Johnson", "Williams", "Kline","Brown", "Garcia", "Jones", "Miller", "Davis","Williams", "Alves", "Sobronsky", "Hall", "Murphy", "Morris")
 class profile:
     def __init__ (self):
         self.name = firstNames[random.randrange(0,len(firstNames))] + " " + lastNames[random.randrange(0,len(lastNames))]
