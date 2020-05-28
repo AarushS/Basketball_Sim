@@ -5,8 +5,10 @@ try:
 except:
     print("We could not recognize that command. Please enter 1 for help or 2 for profile generation")
 if userInput == 1:
-    #will fill out later
-    pass
+    print("Welcome to Aarush's Basketball Simulator, created in collaboration with Maanav Singh.")
+    print("This simulator procedurally generates player profiles with statistics, which you can then pit together")
+    print("in 1v1 scenarios to determine who is the better basketball player. When you input 2, you will be asked how many players")
+    print("you wish to generate. Any number can be inputted.")
 elif userInput == 2:
     print("How many players would you like to generate profiles for?")
     userInput = int(input())
