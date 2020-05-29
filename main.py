@@ -1,4 +1,11 @@
 from profile import profile
+
+def printStats(players):
+    for i in players:
+        for k, v in i.getStats().items():
+            print(k, v)
+        print("\n")
+
 print("Welcome to Aarush's Basketball Simulator, created in collaboration with Maanav Singh. To get help press 1, to generate player profiles press 2")
 try:
     userInput = int(input())
@@ -15,7 +22,17 @@ elif userInput == 2:
     playerArray = []
     for _ in range(userInput):
         playerArray.append(profile())
-    for i in playerArray:
-        for k, v in i.getStats().items():
-            print(k, v)
-        print("\n")
+    printStats(playerArray)
+while(True):
+    print("Would you like to simulate next year? Respond 1 for yes and 2 for no")
+    userInput = int(input())
+
+    if userInput == 1:
+        for i in playerArray:
+            i.incrementAge()
+            i.updateStats()
+            for k, v in i.getStats().items():
+                print(k,v)
+            print("\n")
+    else:
+        break
